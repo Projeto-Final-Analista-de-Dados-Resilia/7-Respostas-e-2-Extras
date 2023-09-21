@@ -108,8 +108,6 @@ df['Variation'] = df['Close'].pct_change()
 max_drop = df.groupby('Ano')['Variation'].min()
 max_increase = df.groupby('Ano')['Variation'].max()
 
-"""# 777777777777777777777777777777777777777777777777777777777777777"""
-
 # imprimindo as variáveis para visualizar os resultados.
 print("Maior queda por ano:")
 print(max_drop)
